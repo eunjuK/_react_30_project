@@ -1,5 +1,5 @@
 *{outline:none;user-select:none}html[theme=dark-mode]{
-  /* ! */filter:invert(100%) hue-rotate(180deg)}body{background-color:#fff}.container{margin:auto;width:1050px}.keyboard{background-color:gray;border-radius:4px;color:gray;width:1050px}.row{
+  /* ! */filter:invert(100%) hue-rotate(180deg)}body{background-color:#fff}button{background-color:transparent;border:0}.container{margin:auto;width:1050px}.keyboard{background-color:gray;border-radius:4px;color:gray;width:1050px}.row{
   /* ! */}.key,.row{display:flex}.key{
   /* ! */align-items:center;background-color:#fff;border-radius:4px;cursor:pointer;flex-wrap:wrap;height:60px;justify-content:center;margin:5px;transition:.2s;width:60px
   /* ! */}.key:hover{background-color:#d3d3d3}.key.active{background-color:#333;color:#fff}.key .two-value{text-align:center;width:100%}.fn-key{width:80px}.space-key{width:420px}.back-space-key{width:130px}.back-slash-key,.tab-key{width:95px}.caps-lock-key{width:110px}.left-shift-key{width:145px}.enter-key{width:150px}.right-shift-key{width:185px}.menu{
