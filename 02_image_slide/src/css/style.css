@@ -1,0 +1,117 @@
+@import url('~@fortawesome/fontawesome-free/css/all.min.css');
+
+/* init */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+/* slide */
+.slide-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  margin: 50px auto;
+}
+.slide-wrap .slide-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .4s
+}
+.slide-wrap .slide {
+  float: left;
+  width: 1000px;
+  height: 400px;
+}
+.slide-wrap .btn {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  width: 50px;
+  height: 60px;
+  margin-top: -25px;
+  line-height: 57px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  user-select: none;
+  transition: 0.1s;
+}
+.slide-wrap .btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.slide-wrap .next {
+  right: -50px;
+  color: white;
+  border-radius: 7px 0 0 7px;
+}
+.slide-wrap .prev {
+  left: -50px;
+  color: white;
+  border-radius: 0 7px 7px 7px;
+}
+.slide-wrap:hover .next {
+  right: 0;
+}
+.slide-wrap:hover .prev {
+  left: 0;
+}
+
+/* indicator */
+.slide-wrap .indicator-wrap {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 20px;
+  height: 15px;
+}
+.slide-wrap .indicator {
+  opacity: 0.5;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  margin: 0 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.slide-wrap .indicator.active {
+  opacity: 1;
+}
+
+/* control */
+.slide-wrap .control-wrap {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+.slide-wrap .btn_control {
+  color: white;
+  cursor: pointer;
+}
+.slide-wrap .btn_control i {
+  padding: 10px;
+}
+.slide-wrap [data-status="play"] .play {
+  display: none;
+}
+.slide-wrap [data-status="play"] .pause {
+  display: block;
+}
+.slide-wrap [data-status="pause"] .play {
+  display: block;
+}
+.slide-wrap [data-status="pause"] .pause {
+  display: none;
+}

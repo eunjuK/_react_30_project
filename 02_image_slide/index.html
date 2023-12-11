@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
+</head>
+
+<body>
+
+	<div class="slide-wrap" id="slide-wrap">
+		<div class="slide-box" id="slide-box">
+			<div class="slide">
+				<img src="<%= require('./src/image/red.jpeg') %>" />
+			</div>
+			<div class="slide">
+				<img src="<%= require('./src/image/orange.jpeg') %>">
+			</div>
+			<div class="slide">
+				<img src="<%= require('./src/image/yellow.jpeg') %>">
+			</div>
+			<div class="slide">
+				<img src="<%= require('./src/image/green.jpeg') %>">
+			</div>
+			<div class="slide">
+				<img src="<%= require('./src/image/blue.jpeg') %>">
+			</div>
+			<div class="slide">
+				<img src="<%= require('./src/image/indigo.jpeg') %>">
+			</div>
+			<div class="slide">
+				<img src="<%= require('./src/image/violet.jpeg') %>">
+			</div>
+		</div>
+
+		<button type="button" class="btn next"><i class="fa fa-arrow-right"></i></button>
+		<button type="button" class="btn prev"><i class="fa fa-arrow-left"></i></button>
+
+		<div class="indicator-wrap">
+		</div>
+
+		<div class="control-wrap" id="control-wrap" data-status="play">
+			<button type="button" class="btn_control pause"><i class="fa fa-pause" aria-label="Pause"></i></button>
+			<button type="button" class="btn_control play"><i class="fa fa-play" aria-label="Play"></i></button>
+		</div>
+
+	</div>
+</body>
+
+</html>
