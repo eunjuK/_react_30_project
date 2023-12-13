@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Date Picker</title>
+	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" href="dist/scss/style.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="date-picker" id="date-picker">
+			<button type="button" class="btn-calendar"></button>
+			<div class="calendar">
+				<div class="month">
+					<button type="button" class="btn prev" id="prev"></button>
+					<p class="month-text"></p>
+					<button class="btn next" id="next"></button>
+				</div>
+				<div class="weeks" id="days">
+					<span class="week">SUN</span>
+					<span class="week">MON</span>
+					<span class="week">TUE</span>
+					<span class="week">WED</span>
+					<span class="week">THU</span>
+					<span class="week">FRI</span>
+					<span class="week">SAT</span>
+				</div>
+				<div class="days"></div>
+			</div>
+		</div>
+	</div>
+	<script src="dist/js/index.js"></script>
+</body>
+
+</html>
