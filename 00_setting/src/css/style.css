@@ -1,0 +1,11 @@
+@import url('~normalize.css');
+@import url('~@fortawesome/fontawesome-free/css/all.min.css');
+.wap {padding: 30px 20px;box-sizing: border-box;}
+.title {padding: 20px 0;font-size: 26px;color: #333;text-align: center;box-sizing: border-box}
+.text {
+    font-size: 14px;
+    color: #666;
+}
+ a {
+    text-decoration: underline;
+ }
